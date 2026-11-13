@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Poppins:wght@600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F8F6F0;
+    color: #1F2937;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.app-layout {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    background-color: #0D4332;
+    color: #F8F6F0;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(13, 67, 50, 0.15);
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.navbar-brand h1 {
+    font-size: 1.5rem;
+    letter-spacing: -0.5px;
+}
+
+.navbar-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    background-color: #1B8A3F;
+    color: #FFFFFF;
+    padding: 0.25rem 0.6rem;
+    border-radius: 999px;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.main-content {
+    flex: 1;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2.5rem 2rem;
+}
+
+.hero-header {
+    margin-bottom: 2rem;
+}
+
+.hero-header h2 {
+    color: #0D4332;
+    font-size: 1.85rem;
+    margin-bottom: 0.35rem;
+}
+
+.hero-header p {
+    color: #4B5563;
+    font-size: 1rem;
+}
+
+.catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    gap: 1.5rem;
+}
+
+.product-card {
+    background-color: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(13, 67, 50, 0.1);
+}
+
+.card-badges {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.85rem;
+}
+
+.badge-marca {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    padding: 0.2rem 0.65rem;
+    border-radius: 6px;
+}
+
+.badge-categoria {
+    font-size: 0.75rem;
+    color: #6B7280;
+    font-weight: 500;
+}
+
+.product-card h3 {
+    font-size: 1.15rem;
+    color: #111827;
+    margin-bottom: 0.5rem;
+}
+
+.product-desc {
+    font-size: 0.875rem;
+    color: #4B5563;
+    margin-bottom: 1.25rem;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    border-top: 1px solid #F3F4F6;
+}
+
+.product-price {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: #0D4332;
+}
+
+.btn-agregar {
+    background-color: #1B8A3F;
+    color: #FFFFFF;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-agregar:hover {
+    background-color: #146c31;
+}
+
+.footer {
+    background-color: #5D3A22;
+    color: #F8F6F0;
+    text-align: center;
+    padding: 1.5rem 2rem;
+    margin-top: auto;
+    font-size: 0.875rem;
+}
+
+.footer span {
+    opacity: 0.85;
+    display: block;
+    margin-top: 0.25rem;
+    font-size: 0.8rem;
+}

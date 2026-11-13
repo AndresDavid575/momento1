@@ -1,11 +1,17 @@
-import React from 'react';
-
-function Navbar() {
-    return (
-        <nav style={{ background: '#333', color: '#fff', padding: '10px 20px' }}>
-            <h2>Mi Proyecto</h2>
-        </nav>
-    );
+export function Navbar() {
+  return (
+    <header className="navbar">
+      <div className="navbar-brand">
+        <h1>Sa-zón</h1>
+        <span className="navbar-tag">Grupo Nutresa</span>
+      </div>
+      <nav>
+        <ul className="navbar-links">
+          <li>Catálogo</li>
+          <li>Recetario</li>
+          <li>Mi Despensa</li>
+        </ul>
+      </nav>
+    </header>
+  );
 }
-
-export default Navbar;

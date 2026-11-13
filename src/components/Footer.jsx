@@ -1,11 +1,8 @@
-import React from 'react';
-
-function Footer() {
+export function Footer() {
   return (
-    <footer style={{ background: '#333', color: '#fff', padding: '10px 20px', marginTop: '20px' }}>
-      <p>© 2026 - Mi Proyecto</p>
+    <footer className="footer">
+      <p>© 2026 Sa-zón — Ecosistema Digital Gastronómico Grupo Nutresa</p>
+      <span>Célula 7: Mercadeo, Campañas y Fidelización</span>
     </footer>
   );
 }
-
-export default Footer;
